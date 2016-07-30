@@ -30,7 +30,7 @@ body {
 }
 .logo {
 	font-family: 'league_gothicregular';
-	color: #ffffff;
+	color: #fff;
 	font-size: 48px;
 	float: left;
 	letter-spacing: -0.5px;
@@ -63,11 +63,16 @@ body {
 .main-nav__item.active {
 	border-bottom: 2px solid #edbfff;
 }
+.main-nav__link {
+	cursor: pointer;
+}
 /*****slider*********/
 .slider {
 	margin-top: 160px;
 	width: 100%;
-	background-color: rgba(0,0,0,0.4);
+	/*background-color: rgba(0,0,0,0.4);*/
+	background: url(../img/slider-bg.png);
+	background-repeat: repeat;
 	padding-bottom: 80px;
 }
 .slider-text {
@@ -225,7 +230,7 @@ body {
 	position: absolute;
 	background-image: url(../img/user-foto.png);
 }
-.testimonials__title {
+.m-title.testimonials-title {
 	font-family: 'league_gothicregular';
 	font-size: 30px;
 	color: #454545;
@@ -234,7 +239,7 @@ body {
 	margin-left: 39px;
 	margin-top: 27px;
 }
-.testimonials__title__rose {
+.m-title__rose {
 	color: #edbfff;
 }
 .testimonials__text {
@@ -313,23 +318,23 @@ body {
 	display: block;
 	background: url(../img/logos-sprite.png);
 }
-.logos__item:nth-child(2) a {
+.logos__link.two {
 	background-position: -76px 0;
 	width: 73px;
 }
-.logos__item:nth-child(3) a{
+.logos__link.three{
 	background-position: -156px 0;
 	width: 66px;
 }
-.logos__item:nth-child(4) a {
+.logos__link.four{
 	background-position: -231px 0;
 	width: 55px;
 }
-.logos__item:nth-child(5) a {
+.logos__link.five {
 	background-position: -291px 0;
 	width: 107px;
 }
-.logos__item:nth-child(6) a {
+.logos__link.six{
 	background-position: -406px 0;
 	width: 79px;
 }

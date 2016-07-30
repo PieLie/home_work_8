@@ -111,6 +111,9 @@
 		padding-top: 115px;
 		padding-bottom: 89px;
 	}
+		.testimonials:after {
+		display: none;
+	}
 	.testimonials__title__rose {
 		display: block;
 		margin-top: -5px;
@@ -179,10 +182,7 @@
 		text-align: center;
 		margin-bottom: 50px;
 	}
-	.main-nav {
-		display: none;
-	}
-	.mobile-mnu {
+	.main-nav.mobile {
 		display: block;
 		text-align: center;
 		left: 0;
@@ -191,14 +191,15 @@
 		right: 0;
 		position: absolute;
 		z-index: 10;
+		margin-top: 0;
 	}
-	.mobile-mnu__list {
+	.main-nav__list.mobile {
 		transition: 0.5s;
 		margin: 0 auto;
 		width: 60%;
 		border-radius: 11px;
 	}
-	.mobile-mnu__link {
+	.main-nav__link.mobile {
 		text-transform: uppercase;
 		font-size: 24px;
 		font-family: 'league_gothicregular';
@@ -207,34 +208,40 @@
 		padding-top: 8px;
 		padding-bottom: 9px;
 	}
-	.mobile-mnu__item:first-child a {
+	.main-nav__item.mobile:first-child a {
 		padding-top: 8px;
 		border-bottom: 2px solid #edbfff;
 		padding-bottom: 3px;
 		margin-bottom: 5px;
 		display: inline-block;
 	}
-	.mobile-mnu__item {
+	.main-nav__item.mobile {
 		display: none;
+		margin-right: 0;
 	}
-	.mobile-mnu__link:active {
+	.main-nav__item.mobile:hover,
+	.main-nav__item.mobile.active {
+		border-bottom: 0;
+	}
+	.main-nav__link.mobile:active {
 		background-color: #29202f;
 		border-bottom: 2px solid #edbfff;
 	}
-	.mobile-mnu__list.show-list {
+	.main-nav__list.mobile.show-list {
 		background-color: #3f3247;
 		border: 1px solid #101a20;
 	}
-	.mobile-mnu__item.show {
+	.main-nav__item.mobile.show {
 		display: block;
 		border-bottom: 1px solid #36283e;
 		border-top: 2px solid #503d58;
 	}
-	.mobile-mnu__item:first-child {
+	.main-nav__item.mobile:first-child {
 		display: block;
 		border-top: 0;
+		margin-right: 0;
 	}
-	.mobile-mnu__item:last-child {
+	.main-nav__item.mobile:last-child {
 		border-bottom: 0;
 	}
 	/*******slider*********/
@@ -406,7 +413,7 @@
 }
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-	.mobile-mnu__list {
+	.main-nav__list {
 		width: 75%;
 	}
 	.hidden-320 {
@@ -472,9 +479,6 @@
 	.testimonials__text {
 		margin-left: 38px;
 		margin-right: 41px;
-	}
-	.testimonials:after {
-		display: none;
 	}
 	.blog {
 		padding-left: 0;
