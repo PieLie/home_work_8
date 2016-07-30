@@ -430,6 +430,7 @@
 	.slider {
 		background-color: transparent;
 		padding-left: 24px;
+		background: none;
 	}
 	.m-head {
 		padding-bottom: 68px;
